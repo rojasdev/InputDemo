@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Percentage Calculator</string>
+    <string name="txt_instruction">Find a percentage or work out the percentage given numbers and percent values.</string>
+    <string name="txt_percent">Percent (%)</string>
+    <string name="txt_number">Enter a number</string>
+    <string name="txt_compute">Compute</string>
+    <string name="txt_percent_symbol">%</string>
+    <string name="txt_compute_result">Showing Result(s)</string>
+    <string name="txt_close">Close</string>
+    <string name="txt_demo">This project is for demonstration use.</string>
+</resources>
