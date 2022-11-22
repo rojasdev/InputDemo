@@ -1,6 +1,8 @@
 package com.demo.inputdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -50,6 +52,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Bundle args = new Bundle();
         args.putString("result", resultMessage);
 
+        Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+        intent.putExtras(args);
+        startActivity(intent);
+
+        /*
         // Create a dialog instance
         DialogFragmentCustom dialogFragmentImp = new DialogFragmentCustom();
         // Pass on dialog argument(args), the result
@@ -57,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Display the Dialog
         dialogFragmentImp.show(getSupportFragmentManager(),"Display Result");
         // Reset EditTexts
+        */
         clearEditText();
     }
     public void clearEditText(){
